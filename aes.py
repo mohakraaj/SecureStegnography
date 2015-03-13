@@ -1,8 +1,3 @@
-#!/usr/bin/python2.5
-# Copyright (c) 2007 Brandon Sterne
-# Licensed under the MIT license.
-# http://brandon.sternefamily.net/files/mit-license.txt
-# Python AES implementation
 
 import sys, hashlib, string, getpass
 from copy import copy
@@ -10,11 +5,6 @@ from random import randint
 from random import getrandbits
 from image import *
 from crypto_rsa import *
-# The actual Rijndael specification includes variable block size, but
-# AES uses a fixed block size of 16 bytes (128 bits)
-
-# Additionally, AES allows for a variable key size, though this implementation
-# of AES uses only 256-bit cipher keys (AES-256)
 
 password=""
 
